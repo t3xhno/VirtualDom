@@ -18,10 +18,9 @@ const createVApp = (count) => createELement("div", {
 });
 
 let count = 0;
+
 const vApp = createVApp(count);
-
 const $app = render(vApp);
-
 let $rootEl = mount($app, document.getElementById("app"));
 
 setInterval(() => {
